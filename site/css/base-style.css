@@ -1,0 +1,108 @@
+/****************************************************** 
+ * Autor: marcos Willian de Souza - Data: 08/03/2016 
+ * Arquivo: base-style.css                               
+ *****************************************************/
+@charset "UTF-8";
+
+body{
+	background: #FAFAD2;
+	/* color: #DAA520; */
+	color: #8B4500;
+	font: 100% Arial;
+	text-shadow: 1px 1px #EEDD82;
+}
+#container  {
+
+	background: #ffffff;
+	margin: 0 auto;
+	width: 820px;
+	
+	/* sombra do container */
+  -webkit-box-shadow: 0px 0px 30px #000; /* Saf3.0+, Chrome */
+     -moz-box-shadow: 0px 0px 30px #000; /* FF3.5 - 3.6 */
+          box-shadow: 0px 0px 30px #000; /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+		  
+	/* Cantos superior arredondados */
+	border-top-left-radius: 3em 3em;
+	border-top-right-radius: 3em 3em;
+	
+	/* Cantos inferior arredondados */
+	border-bottom-right-radius: 3em 3em;
+	border-bottom-left-radius:  3em 3em;
+		  	  
+}
+/* header */
+header {
+	background-color: #DAA520;
+	color: #ffffff;
+	
+	border-top-left-radius: 3em 3em;
+	border-top-right-radius: 3em 3em;
+}
+header h1 {
+	text-align: center;
+	padding: 10px 10px 10px 25px;
+	text-shadow: 1px 1px #778899;
+}
+/* article */
+article {
+	padding: 0 5px 0 25px;
+}
+article  h1{
+	text-shadow: 1px 1px #778899;
+	color: #DAA520;
+}
+article form input{
+	border: 1px solid #DAA520;
+	color: #B8860B;
+}
+article form select{
+	border: 1px solid #DAA520;
+	color: #B8860B;
+}
+article table {
+	text-align: left;
+	margin-left: 10px;
+}
+article table tr td{
+	width: 180px
+}
+/* Formatação dos input's e select's */
+.nome_cliente{
+	width: 450px;
+}
+.nm_cpf_cnpj{
+	width: 200px;
+}
+.nm_idade{
+	width: 80px;
+}
+.tx_email{
+	width: 220px;
+}
+.cb_idioma{
+	width: 228px;
+}
+.cb_profissao{
+	width: 228px;
+}
+.bt_enviar{
+	width: 90px;
+	height: 30px;
+	font-weight: bold;
+}
+/* footer */
+footer {
+	background-color: #DAA520;
+	color: #ffffff;
+	font: 100% Arial;
+	
+	border-bottom-right-radius: 3em 3em;
+	border-bottom-left-radius:  3em 3em;
+}
+footer p {
+	padding: 10px 5px 10px 25px; 
+	text-align: center;
+	line-height: 100%;
+	text-shadow: 1px 1px #778899;
+}

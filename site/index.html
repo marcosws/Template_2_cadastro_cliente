@@ -1,0 +1,95 @@
+<!-- Modelo 2 - Cadastro de Cliente -->
+<!-- Autor: Marcos Willian de Souza -->
+<!-- --------- 07/03/2016 --------- -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Cadastro de Cliente - Modelo 2</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/base-style.css" />
+		<!-- jQuery -->
+        <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> ONLINE -->
+		<!-- <script src="js/jquery/jquery-2.2.1.js"></script> -->
+		<!-- JavaScript --->
+		<script src="js/script-js.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Cadastro de Clientes</h1>
+			</header>
+			<article>
+				<section>
+					<h1>Cadastro de Clientes</h1>
+				</section>
+				<section>
+					<form class="formulario" id="frm_cliente" method="POST" action="index.html" onSubmit="return validaFormulario()">
+						<p>Nome:<br/><input name="nome" type="text" class="nome_cliente" id="nome" maxlength="256"></p>
+						<p>CPF/CNPJ:<br/><input name="cpf_cnpj" type="text" class="nm_cpf_cnpj" id="cpf_cnpj" maxlength="14"></p>
+						<p>Idade:<br/><input name="idade" type="text" class="nm_idade" id="idade" maxlength="3"></p>
+						<p>Email:<br/><input name="email" type="text" class="tx_email" id="email" maxlength="150"></p>
+						<p>Idioma:<br/>
+						<select name="idioma" class="cb_idioma" id="idioma">
+						  <option value="ingles">Inglês</option>
+						  <option value="espanhol">Espanhol</option>
+						  <option value="alemao">Alemão</option>
+						  <option value="portugues">Português</option>
+						</select></p>
+						<p>Profissão:<br/>
+						<select name="profissao" class="cb_profissao" id="profissao">
+						  <option value="analista">Analista</option>
+						  <option value="desenvolvedor">Desenvolvedor</option>
+						  <option value="coordenador">Coordenador</option>
+						  <option value="gerente">Gerente</option>
+						  <option value="diretor">Diretor</option>
+						</select></p>
+						<p><fieldset>
+							<legend>Lista de Interesses (Sistemas Operacionais)</legend>
+							<table>
+								<tr>
+									<td><input type="checkbox" name="osname" value="windows" />Windows&reg </td>
+									<td><input type="checkbox" name="osname" value="osx" />OS X-Mac</td>
+									<td><input type="checkbox" name="osname" value="unix" />Unix/Unix-Like</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="osname" value="bsd" />BSD</td>
+									<td><input type="checkbox" name="osname" value="linux" />Linux</td>
+									<td><input type="checkbox" name="osname" value="Outros" />Outros</td>
+								</tr>
+							</table>
+						</fieldset></p>
+						<p><fieldset>
+							<legend>Lista de Interesses (Linguagens de Programação)</legend>
+							<table>
+								<tr>
+									<td><input type="checkbox" name="lang_name" value="ccpp">C/C++</input></td>
+									<td><input type="checkbox" name="lang_name" value="csharp">C#</input></td>
+									<td><input type="checkbox" name="lang_name" value="java" />JAVA<sup><small>TM</small></sup></input></td>
+									<td><input type="checkbox" name="lang_name" value="JavaScript" />JavaScript</input></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="lang_name" value="Python" />Python</input></td>
+									<td><input type="checkbox" name="lang_name" value="PHP" />PHP</input></td>
+									<td><input type="checkbox" name="lang_name" value="Ruby" />Ruby</input></td>
+									<td><input type="checkbox" name="lang_name" value="Lua" />Lua</input><br/></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="lang_name" value="VBA" />VBA</input></td>
+									<td><input type="checkbox" name="lang_name" value="vbnet" />Visual Basic.NET</input></td>
+									<td><input type="checkbox" name="lang_name" value="cobol" />COBOL</input></td>
+									<td><input type="checkbox" name="lang_name" value="Outras" />Outras</input></td>
+								</tr>
+							</table>
+						</fieldset></p>
+						<p><input name="enviar" value="Enviar" class="bt_enviar" type="submit"></p>
+					</form>
+				</section>
+			</article>
+			<footer>
+				<p><small>&copy Copyright - Designed by: Marcos Willian de Souza</small><br>
+				<small>Cadastro de Cliente - 2016</small></p>
+			</footer>
+		<div>
+	</body>
+</html>
